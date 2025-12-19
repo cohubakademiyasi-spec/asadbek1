@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view("welcome");
 });
 
+Route::get('/home', function () {
+    return view("welcome2");
+});
+
 Route::get('/Fargona', [TestController::class, 'Fargona']);
 Route::get('/Andijon', [TestController::class, 'Andijon']);
 Route::get('/Toshken', [TestController::class, 'Toshken']);
